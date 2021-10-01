@@ -1,0 +1,51 @@
+.shop__container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.product__container{
+    border-right: 1px solid #666;
+    padding: 50px;
+}
+
+.title{
+    font-size: 30px;
+    color: #444;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 50px ;
+}
+
+.search__box{
+    text-align: center;
+    background: #555;
+    padding: 20px 0;
+}
+
+.search__type{
+    padding: 12px 20px;
+    background: #fff;
+    border: none;
+    outline: none;
+    width: 50%;
+    border-radius: 5px 0 0 5px;
+    font-size: 18px;
+}
+::placeholder{
+    font-size: 18px;
+}
+.search__btn{
+    padding: 12px 40px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    background: orangered;
+    font-size: 18px;
+    color: #fff;
+}
+
+.cart__container{
+    padding: 30px;
+}

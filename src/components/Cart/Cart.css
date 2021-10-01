@@ -1,0 +1,17 @@
+.price__cart__design{
+    background: olivedrab;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.total__price{
+    border-bottom: 2px solid #ddd;
+}
+
+.price__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
