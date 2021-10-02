@@ -41,7 +41,6 @@ const Shop = () => {
     
     const addPriceBtnValue = (product) => {
         const newCart = [...cart, product];
-        console.log(newCart);
         setCart(newCart);
         addToDb(product.key)
     };
@@ -50,7 +49,6 @@ const Shop = () => {
         const searchText = (event.target.value).toLowerCase();
         const matchedProduct = product.filter(pro => pro.name.toLowerCase().includes(searchText));
         setDisplayProducts(matchedProduct);
-        console.log(matchedProduct.length);
     }
 
     return (
