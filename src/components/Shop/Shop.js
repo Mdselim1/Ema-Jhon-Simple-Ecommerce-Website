@@ -40,7 +40,8 @@ const Shop = () => {
     },[product])
     
     const addPriceBtnValue = (product) => {
-        const newCart = [...cart, product]
+        const newCart = [...cart, product];
+        console.log(newCart);
         setCart(newCart);
         addToDb(product.key)
     };

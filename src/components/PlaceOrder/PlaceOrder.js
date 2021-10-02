@@ -3,8 +3,10 @@ import img from '../../images/giphy.gif';
 
 const PlaceOrder = () => {
     return (
-        <div>
-            <h1>This is placeorder paze</h1>
+        <div style={{
+            textAlign: 'center'
+        }}>
+            <h1>Your order is Reviewing</h1>
             <img src={img} alt="" />
         </div>
     );

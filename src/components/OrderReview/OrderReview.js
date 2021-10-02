@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import useCart from '../../hooks/useCart';
 import useProduct from '../../hooks/useProduct';
 import { clearTheCart, removeFromDb } from '../../utilities/fakedb';
-import Cart from '../Cart/Cart'
+import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
 
 const OrderReview = () => {
@@ -19,9 +19,15 @@ const OrderReview = () => {
     };
 
     const handlePlaceOrder = () => {
-        history.push('/placeorder');
-        setCart([]);
-        clearTheCart();
+        if (cart.length === 0) {
+            alert('Please Add Some Product');
+        }
+        else {
+            history.push('/placeorder');
+            setCart([]);
+            clearTheCart();
+        }
+        
     };
 
     return (
@@ -30,7 +36,7 @@ const OrderReview = () => {
             <div className="shop__container">
                 
             <div className="product__container">
-                <h1 className="title">See Our Products</h1>
+                <h1 className="title">See Your Product</h1>
                     {
                         cart.map(produ => <ReviewItem key={produ.key} products={produ} handleRemove={handleRemove}></ReviewItem>)
                     }
