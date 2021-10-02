@@ -3,7 +3,7 @@ import './Cart.css';
 
 const Cart = (props) => {
     const { cart } = props
-    // console.log(cart);
+    console.log(props);
     let totalPrice = 0;
     let totalQuantity = 0;
     for (const product of cart) {
@@ -43,6 +43,12 @@ const Cart = (props) => {
             <div className="price__list">
                 <h3>Total Price :</h3>
                 <span>$ {grandTotal.toFixed(2)}</span>
+            </div>
+            <div style={{
+                margin: '20px 0',
+                textAlign:'center'
+            }}>
+                {props.children}
             </div>
             
             
